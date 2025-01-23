@@ -31,3 +31,72 @@ h1{
     flex-direction: column;
     gap: 10px;
 }
+#todo-input{
+    box-sizing: border-box;
+    padding: 12px 20px;
+    width: 100%;
+    background: none;
+    border: 2px solid black;
+    border-radius: 1000px;
+    font: inherit;
+    color: hsl(0, 0%, 100%);
+    caret-color: hsl(50, 92%, 40%);
+};
+#todo-input:focus{
+    outline: none;
+}
+form{
+    position: relative;
+}
+#add-Btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background-color: hsl(50, 92%, 40%);
+    height: 100%;
+    padding: 0 30px;
+    border: none;
+    border-radius: 1000px;
+    font: inherit;
+    font-weight: 600;
+    color: hsl(0, 0%, 20%);
+    cursor: pointer;
+}
+.todo{
+    margin-bottom: 10px;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+.todo .todo-text{
+    padding: 15px;
+    padding-right: 0;
+    flex-grow: 1;
+}
+.delete-Btn{
+    padding: 3px;
+    background:none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.delete-Btn svg{
+    transition: 200ms ease;
+}
+.delete-Btn:hover svg{
+    fill: hsl(0, 100%, 50%);
+}
+.custom-checkbox{
+    border: 2px solid hsl(50, 92%, 40%);
+    border-radius: 50%;
+    min-height: 20px;
+    min-width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
